@@ -18,5 +18,19 @@ const reduceData = data.reduce((value, e) => {
   const total = e + value;
   return total;
 }, 0);
-
 console.log(reduceData);
+
+// Reduce With Object
+
+const product = [
+  { name: "Iphone", price: 1000 },
+  { name: "Mac", price: 3000 },
+  { name: "Book", price: 2000 },
+];
+const allPrice = product.reduce((value, e) => {
+  console.log("price:" + e.price);
+  console.log("value:" + value);
+  const total = e.price + value;
+  return total;
+}, 0);
+console.log(allPrice);

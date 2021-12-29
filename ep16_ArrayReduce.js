@@ -28,9 +28,9 @@ const product = [
   { name: "Book", price: 2000 },
 ];
 const allPrice = product.reduce((value, e) => {
-  console.log("price:" + e.price);
-  console.log("value:" + value);
+  //   console.log("price:" + e.price);
+  //   console.log("value:" + value);
   const total = e.price + value;
   return total;
 }, 0);
-console.log(allPrice);
+console.log("total price is " + allPrice);
